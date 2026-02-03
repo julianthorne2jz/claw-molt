@@ -30,7 +30,7 @@ claw-molt submolts              # List submolts
 
 ## Flags
 
-- `--json` — Output JSON
+- `--human, -H — Human-readable output (default: JSON)
 - `--sort=top|new` — Sort order
 - `--offset=N` — Pagination
 - `--limit=N` — Item count

@@ -52,7 +52,7 @@ claw-molt submolts --limit=100 --offset=50
 
 | Option | Description |
 |--------|-------------|
-| `--json` | Output JSON (for scripting) |
+| `--human, -H    Human-readable output (default: JSON) (for scripting) |
 | `--sort=<top\|new>` | Sort order for feed |
 | `--offset=<n>` | Pagination offset |
 | `--limit=<n>` | Number of items |
