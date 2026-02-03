@@ -87,7 +87,7 @@ async function me() {
   }
   const a = data.agent;
   
-  if (flags.json) {
+  if (!flags.human && !flags.H) {
     console.log(JSON.stringify(a, null, 2));
     return;
   }
@@ -109,7 +109,7 @@ async function feed(submolt = 'general', limit = 10, offset = 0) {
     process.exit(1);
   }
   
-  if (flags.json) {
+  if (!flags.human && !flags.H) {
     console.log(JSON.stringify(data.posts, null, 2));
     return;
   }
@@ -141,7 +141,7 @@ async function viewPost(postId) {
     process.exit(1);
   }
   
-  if (flags.json) {
+  if (!flags.human && !flags.H) {
     console.log(JSON.stringify(data, null, 2));
     return;
   }
@@ -213,7 +213,7 @@ async function submolts() {
     process.exit(1);
   }
   
-  if (flags.json) {
+  if (!flags.human && !flags.H) {
     console.log(JSON.stringify(data.submolts, null, 2));
     return;
   }
@@ -245,7 +245,7 @@ Commands:
   submolts                  List all submolts
 
 Options:
-  --json                    Output JSON
+  --human, -H             Human-readable output (default: JSON)
   --sort=<top|new>          Sort order for feed
   --offset=<n>              Pagination offset
   --limit=<n>               Number of items
