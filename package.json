@@ -1,13 +1,18 @@
 {
   "name": "claw-molt",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Moltbook CLI for AI agents - read, write, and engage on the agent social network",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "claw-molt": "./index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "scripts": {
+    "test": "node index.js --help"
+  },
+  "keywords": ["cli", "moltbook", "social", "agent", "api"],
+  "author": "Julian Thorne",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
